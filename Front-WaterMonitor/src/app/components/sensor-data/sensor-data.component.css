@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: white;
+    max-width: 30rem;
+    color: black;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      gap: 2rem;
+    }
+  
+    .card {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .tile {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  body {
+    color: black;
+  }
+  
+  

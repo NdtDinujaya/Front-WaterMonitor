@@ -1,0 +1,34 @@
+<div style="height: 100px;"></div>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Sensor Data</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      &nbsp;&nbsp;&nbsp;<p>Temperature: {{ sensorData?.temperature }}°C</p>
+      &nbsp;&nbsp;&nbsp;<p>EC Value: {{ sensorData?.ecValue }}</p>
+      &nbsp;&nbsp;&nbsp;<p>Turbidity: {{ sensorData?.turbidity }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Water Drinkability</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- <p>{{ drinkabilityStatus$ | async }}</p> -->
+    </mat-card-content>
+    
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Forecast Line Chart</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+        [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType">
+      </canvas>
+    </mat-card-content>
+  </mat-card>
+</div>
